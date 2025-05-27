@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Automação Veicular</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Automação Veicular</h1>
+        
+        <div class="status-panel">
+            <div class="status-item">
+                <span class="status-label">Motor:</span>
+                <span id="engine-status" class="status-value off">Desligado</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Faróis:</span>
+                <span id="lights-status" class="status-value off">Apagados</span>
+            </div>
+            <div class="status-item">
+                <span class="status-label">Porta-malas:</span>
+                <span id="trunk-status" class="status-value off">Fechado</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-ligar" class="btn">Ligar Motor</button>
+            <button id="btn-desligar" class="btn" disabled>Desligar Motor</button>
+            <button id="btn-farol" class="btn" disabled>Acender Faróis</button>
+            <button id="btn-porta-malas" class="btn">Abrir Porta-malas</button>
+            <div class="honk-control">
+                <button id="btn-buzina" class="btn" disabled>Buzinar</button>
+                <input type="number" id="honk-duration" value="1" min="1" max="10" class="honk-input">
+                <span>segundos</span>
+            </div>
+        </div>
+
+        <div class="log-panel">
+            <h3>Log de Ações</h3>
+            <div id="log-messages"></div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
