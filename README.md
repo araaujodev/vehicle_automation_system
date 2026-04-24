@@ -1,40 +1,44 @@
 # 🚗 Vehicle Automation System
 
-Projeto desenvolvido na faculdade com o objetivo de simular e implementar um sistema de **automação veicular**, integrando hardware e software para controle inteligente de funcionalidades.
+Este projeto nasceu como uma iniciativa acadêmica, mas foi desenvolvido com uma abordagem mais próxima do mercado: simular um sistema de **automação veicular** com foco em organização, integração entre camadas e tomada de decisão baseada em eventos.
+
+A ideia foi ir além de “fazer funcionar” e pensar em **como esse tipo de sistema seria estruturado na prática**.
 
 ---
 
 ## 📌 Sobre o projeto
 
-Este projeto consiste em um sistema de **automação para veículos**, capaz de monitorar e controlar funcionalidades de forma automatizada e eficiente.
+O sistema simula o controle de funcionalidades de um veículo de forma automatizada, permitindo monitoramento e execução de ações em tempo real.
 
-A aplicação combina **backend robusto**, **interface interativa** e lógica de automação, simulando cenários reais do uso de tecnologia embarcada.
+Durante o desenvolvimento, busquei trabalhar não só a implementação, mas também a **separação de responsabilidades**, comunicação entre partes do sistema e clareza na lógica.
 
 ---
 
-## Objetivo
+## 🎯 Objetivo
 
-- Automatizar funções básicas de um veículo  
-- Criar uma interface para interação com o sistema  
-- Simular comunicação entre software e dispositivos  
-- Aplicar conceitos de programação moderna e integração de tecnologias  
+Mais do que apenas entregar funcionalidades, o objetivo foi:
+
+- Explorar automação aplicada a um contexto real  
+- Praticar integração entre backend e interface  
+- Trabalhar organização de código e arquitetura  
+- Simular cenários próximos de sistemas embarcados  
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- 🔐 Controle de acesso (simulação de ignição/start)  
-- 💡 Controle de luzes do veículo  
+- 🔐 Simulação de ignição e controle de acesso  
+- 💡 Controle de luzes  
 - 📊 Monitoramento de status em tempo real  
-- 🔄 Execução de comandos automatizados  
-- 🧠 Lógica de automação baseada em eventos  
+- 🔄 Execução de ações automatizadas  
+- 🧠 Lógica orientada a eventos  
 
 ---
 
 ## 🛠️ Tecnologias utilizadas
 
 ### Backend
-- Rust (alto desempenho e controle de baixo nível)
+- Rust → foco em performance, controle e previsibilidade
 
 ### Frontend
 - HTML5  
@@ -46,11 +50,13 @@ A aplicação combina **backend robusto**, **interface interativa** e lógica de
 
 ## 🧩 Arquitetura
 
-O sistema foi dividido em camadas:
+O projeto foi estruturado pensando em separação clara de responsabilidades:
 
-- **Backend (Rust):** responsável pela lógica principal e simulação de controle do sistema  
-- **Frontend:** interface para interação do usuário  
-- **Integração:** comunicação entre interface e sistema de automação  
+- **Backend (Rust):** centraliza a lógica da automação e controle do sistema  
+- **Frontend:** responsável pela interação e visualização  
+- **Comunicação:** integração entre interface e lógica principal  
+
+A ideia foi manter o sistema simples, mas já seguindo um padrão que permita evolução.
 
 ---
 
